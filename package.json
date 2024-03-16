@@ -1,0 +1,28 @@
+{
+    "name": "vue-3-pinia-jwt-authentication-example",
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview --port 5050",
+        "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+    },
+    "dependencies": {
+        "@mdi/font": "^7.1.96",
+        "axios": "^1.6.7",
+        "pinia": "^2.0.13",
+        "vee-validate": "^4.5.11",
+        "vue": "^3.2.33",
+        "vue-router": "^4.0.14",
+        "vuetify": "^3.1.10",
+        "yup": "^0.32.11"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^2.3.1",
+        "eslint": "^8.5.0",
+        "eslint-plugin-vue": "^8.2.0",
+        "sass": "^1.71.1",
+        "sass-loader": "^14.1.1",
+        "vite": "^2.9.5"
+    }
+}
