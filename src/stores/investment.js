@@ -50,10 +50,15 @@ export const useInvestmentStore = defineStore("investment", {
                     this.usersData.push({
                         name: element.user.first_name,
                         fName: element.user.last_name,
+                        mobile: element.user.mobile,
                         meter: element.area,
                         title: element.project.title,
                         amount: JSON.parse(element.invoice_details).total_amount,
-                        date: this.converDate(element.created_at)
+                        tAmount: JSON.parse(element.invoice_details).pure_amount,
+                        date: this.converDate(element.created_at),
+                        wallet: element.user.wallet.balance,
+                        cardNumber: element.user.bank_account?.card_number,
+                        sheba: element.user.bank_account?.iban_number,
                       },)
                 });
 

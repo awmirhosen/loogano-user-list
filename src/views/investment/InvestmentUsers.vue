@@ -30,10 +30,15 @@ import { useInvestmentStore } from "../../stores/investment";
       [
         { title: 'نام', align: 'center', key: 'name' },
         { title: 'نام خانوادگی', align: 'center', key: 'fName' },
+        { title: 'تلفن همراه', align: 'center', key: 'mobile' },
         { title: '(CM)متراژ سرمایه گذاری', align: 'center', key: 'meter' },
         { title: 'نام پروژه', align: 'center', key: 'title' },
-        { title: '(T)مبلغ سرمایه گذاری', align: 'center', key: 'amount' },
+        { title: '(T)مبلغ سرمایه گذاری', align: 'center', key: 'tAmount' },
+        { title: '(T)مبلغ پرداخت شده', align: 'center', key: 'amount' },
         { title: 'تاریخ سرمایه گذاری', align: 'center', key: 'date' },
+        { title: 'موجودی(T)', align: 'center', key: 'wallet' },
+        { title: 'شماره کارت', align: 'center', key: 'cardNumber' },
+        { title: 'شماره شبا', align: 'center', key: 'sheba' },
       ]
   )
   
