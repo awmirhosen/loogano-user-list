@@ -5,8 +5,6 @@
 </div>
 <div class="pa-10" v-else>
 
-
-
     <v-data-table
           
           :headers="headers"

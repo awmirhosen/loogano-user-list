@@ -30,6 +30,8 @@ const app = createApp(App);
 
 app.use(createPinia());
 app.use(router);
-app.use(vuetify);
+app.use(vuetify, {
+    rtl: true
+});
 
 app.mount('#app');

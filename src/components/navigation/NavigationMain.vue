@@ -80,6 +80,7 @@ const authStore = useAuthStore();
 
 const subMenusInvestme = reactive([
   {title: "سرمایه گذار ها", keyword: "investment-users", icon: null, link: "investment-users"},
+  {title: "تراکنش ها", keyword: "transactions-list", icon: null, link: "transactions-list"},
 ]);
 
 

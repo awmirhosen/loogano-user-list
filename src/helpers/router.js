@@ -14,6 +14,12 @@ export const router = createRouter({
            path: "/investment/users",
            name: "investment-users",
            component: () => import("../views/investment/InvestmentUsers.vue")
+        },
+        ////// transactions
+        {
+            path: "/investment/transactions",
+            name: "transactions-list",
+            component: () => import("../views/transactions/TransctionList.vue")
         }
     ]
 });
