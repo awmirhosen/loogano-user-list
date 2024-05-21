@@ -50,6 +50,21 @@ export const useTransactionStore = defineStore("transaction", {
                 this.transactionData.forEach(item => {
                     item.amount = item.amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
                     item.created_at  = this.converDate(item.created_at);
+                    if (item.source.walletable_type === "gateway") {
+                        item.source.walletable_type = "درگاه"
+                    } else if (item.source.walletable_type === "user") {
+                        item.source.walletable_type = `${item.source.walletable.first_name} ${item.source.walletable.last_name}`
+                    }
+
+                    if (item.destination.walletable_type === "project") {
+                        item.destination.walletable_type = "پروژه"
+                    } else if (item.destination.walletable_type === "coordinator") {
+                        console.log("hell");
+                        item.destination.walletable_type = "کارمزد و یا مالیات"
+                    } else if (item.destination.walletable_type === "user") {
+                        console.log("hell");
+                        item.destination.walletable_type = `${item.destination.walletable.first_name} ${item.destination.walletable.last_name}`
+                    }
 
                 })
 

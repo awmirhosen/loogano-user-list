@@ -38,11 +38,11 @@ const thousandSep = (price) => {
 
 const headers = reactive(
     [
+      { title: 'شماره', align: 'center', key: 'id' },
       { title: '(T)مبلغ', align: 'center', key: 'amount' },
       { title: 'تاریخ', align: 'center', key: 'created_at' },
       { title: 'مقصد تراکنش', align: 'center', key: 'destination.walletable_type' },
       { title: 'مبدا تراکنش', align: 'center', key: 'source.walletable_type' },
-      { title: 'خطا', align: 'center', key: 'is_rolledback' },
     ]
 )
 
